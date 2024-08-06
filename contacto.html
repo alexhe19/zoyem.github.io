@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda Zoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ce33ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .contact-container {
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            width: 500px;
+            max-width: 90%;
+        }
+        .contact-container h2 {
+            color: #040405;
+            margin-bottom: 30px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .contact-container input[type="text"],
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-container input[type="submit"] {
+            background: #040405;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .contact-container input[type="submit"]:hover {
+            background: #e55d00;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contáctanos</h2>
+        <form action="contacto.php" method="post">
+            <input type="text" name="name" placeholder="Nombre Completo" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="text" name="subject" placeholder="Asunto" required>
+            <textarea name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
